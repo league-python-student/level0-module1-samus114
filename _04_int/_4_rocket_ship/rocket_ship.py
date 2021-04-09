@@ -27,7 +27,20 @@ def mouse_pressed(event):
     
     # 2. Modify the locations of the shapes above so the rocket will be drawn
     #    where the mouse is clicked
-    
+
+    pointss = [x, y-50, x+50, y+50, x-50, y+50]
+    canvas.create_polygon(pointss, fill='gray', width=2)
+    pointss = [x, y - 50, x + 50, y + 70, x - 50, y + 70]
+    canvas.create_polygon(pointss, fill='gray', width=2)
+    pointss = [x, y - 50, x + 50, y + 90, x - 50, y + 90]
+    canvas.create_polygon(pointss, fill='gray', width=2)
+    pointss = [x, y - 50, x + 50, y + 110, x - 50, y + 110]
+    canvas.create_polygon(pointss, fill='gray', width=2)
+    pointss = [x, y - 50, x + 50, y + 130, x - 50, y + 130]
+    canvas.create_polygon(pointss, fill='gray', width=2)
+    pointss = [x, y - 50, x + 50, y + 150, x - 50, y + 150]
+    canvas.create_polygon(pointss, fill='gray', width=2)
+
 
 canvas.bind("<Button-1>", mouse_pressed)
 
